@@ -1,4 +1,6 @@
 import os
+import shutil
+from datetime import datetime
 
 class Path:
     def __init__(self, root: str, data: dict):
@@ -7,6 +9,7 @@ class Path:
         self.entrada = data.get("entrada")
         self.saida = data.get("saida")
         self.backup = data.get("backup")
+        self.date = datetime.now().strftime("%Y-%m-%d")
         
     def createDir(self, path):
         if not os.path.exists(path):
@@ -31,4 +34,4 @@ class Path:
         path = self.createDir(path)
         
         return path
-        
+    
