@@ -21,9 +21,9 @@ Conversor de arquivos **`XML`** para formatos **` TXT`**,**`PDF`** e **`CSV`** e
 ```
 xml-converter/
 ├── app/
-│   └── main.py
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── main.py
 ```
 
 
